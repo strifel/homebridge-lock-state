@@ -1,0 +1,19 @@
+{
+    "pluginAlias": "HTTP Lock State",
+    "pluginType": "accessory",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "title": "URL to get state of lock",
+          "type": "string",
+          "required": true
+        },
+        "refresh": {
+            "title": "MS between refreshes",
+            "type": "number",
+            "default": 30000
+        }
+      }
+    }
+}
